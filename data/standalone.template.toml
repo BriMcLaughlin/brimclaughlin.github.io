@@ -1,5 +1,5 @@
-name = "York network"
-description = "York network"
+name = "Untitled Project"
+description = "No Description"
 requireLogin = false
 hideDeleteNodeButton = false
 allowLoggedInUserToImport = false
@@ -54,114 +54,74 @@ hidden = false
   [[nodeDefs.type.options]]
   color = "#eeeeee"
   label = ""
+  replacement = ""
+  delete = false
 
   [[nodeDefs.type.options]]
-  color = "#53d5fd"
-  label = "M"
+  color = "#a77b00"
+  label = "prisoner"
+  replacement = ""
+  delete = false
 
   [[nodeDefs.type.options]]
-  color = "#ed719e"
-  label = "W"
+  color = "#e32400"
+  label = "matron"
+  replacement = ""
+  delete = false
 
   [[nodeDefs.type.options]]
-  color = "#fff76b"
-  label = "U"
+  color = "#00a3d7"
+  label = "institution"
+  replacement = ""
+  delete = false
+
+  [[nodeDefs.type.options]]
+  color = "#77bb41"
+  label = "location"
+  replacement = ""
+  delete = false
+
+  [[nodeDefs.type.options]]
+  color = "#e392fe"
+  label = "funder"
+  replacement = ""
+  delete = false
+
+  [[nodeDefs.type.options]]
+  color = "#56e1d1"
+  label = "prison reformer"
+  replacement = ""
+  delete = false
+
+  [[nodeDefs.type.options]]
+  color = "#77008f"
+  label = "prison staff"
+  replacement = ""
+  delete = false
 
 [nodeDefs.notes]
-type = "select"
-displayLabel = "Relationship"
-exportLabel = "Relationship"
-help = "Relationship"
+type = "string"
+displayLabel = "Notes"
+exportLabel = "Notes"
+help = "General purpose notes text field"
 includeInGraphTooltip = true
 hidden = false
-
-  [[nodeDefs.notes.options]]
-  label = ""
-
-  [[nodeDefs.notes.options]]
-  label = "Royal"
-
-  [[nodeDefs.notes.options]]
-  label = "LIW"
-
-  [[nodeDefs.notes.options]]
-  label = "Son"
-
-  [[nodeDefs.notes.options]]
-  label = "Husband"
-
-  [[nodeDefs.notes.options]]
-  label = "Kin"
-
-  [[nodeDefs.notes.options]]
-  label = "Daughter"
-
-  [[nodeDefs.notes.options]]
-  label = "Brother-in-Law"
-
-  [[nodeDefs.notes.options]]
-  label = "Grandson"
-
-  [[nodeDefs.notes.options]]
-  label = "Father"
-
-  [[nodeDefs.notes.options]]
-  label = "Brother"
 
 [nodeDefs.info]
-type = "select"
-displayLabel = "Tier"
-exportLabel = "Tier"
-help = "Tier"
+type = "string"
+displayLabel = "Tags"
+exportLabel = "TagsNodes"
+help = "Semi-colon delimited tags"
 includeInGraphTooltip = true
 hidden = false
-
-  [[nodeDefs.info.options]]
-  label = "Royal"
-
-  [[nodeDefs.info.options]]
-  label = "Tier 3"
-
-  [[nodeDefs.info.options]]
-  label = "Tier 2"
-
-  [[nodeDefs.info.options]]
-  label = "Tier 4"
-
-  [[nodeDefs.info.options]]
-  label = "Tier 1"
 
 [nodeDefs.provenance]
-type = "select"
-displayLabel = "Social Status"
-exportLabel = "SocStatus"
-help = "Social Status"
+type = "string"
+displayLabel = "Provenance"
+exportLabel = "Provenance"
+help = "Who created this?  (aka Provenance)"
 includeInGraphTooltip = true
 hidden = false
-
-  [[nodeDefs.provenance.options]]
-  label = "Gentlewoman/Mistress"
-
-  [[nodeDefs.provenance.options]]
-  label = "Lady/Knight's Wife"
-
-  [[nodeDefs.provenance.options]]
-  label = "Gentleman"
-
-  [[nodeDefs.provenance.options]]
-  label = "Lower Servant"
-
-  [[nodeDefs.provenance.options]]
-  label = "Lady/earl's daughter"
-
-  [[nodeDefs.provenance.options]]
-  label = "Baroness"
-
-  [[nodeDefs.provenance.options]]
-  label = "Knight"
-
-  [[nodeDefs.provenance.options]]
-  label = "Mistress/Knight's daughter"
 
 [nodeDefs.comments]
 type = "string"
@@ -235,32 +195,44 @@ hidden = false
   delete = false
 
   [[edgeDefs.type.options]]
-  color = "#000000"
-  label = "is related to"
-  replacement = ""
-  delete = false
-
-  [[edgeDefs.type.options]]
-  color = "#929292"
-  label = "is potentially related to"
-  replacement = ""
-  delete = false
-
-  [[edgeDefs.type.options]]
-  color = "#008cb4"
-  label = "does service for"
+  color = "#7a7a7a"
+  label = "is incarcerated at"
   replacement = ""
   delete = false
 
   [[edgeDefs.type.options]]
   color = "#e32400"
-  label = "rewards"
+  label = "works at"
   replacement = ""
   delete = false
 
   [[edgeDefs.type.options]]
-  color = "#9929bd"
-  label = "engages in svc reward mix"
+  color = "#669c35"
+  label = "is from"
+  replacement = ""
+  delete = false
+
+  [[edgeDefs.type.options]]
+  color = "#d357fe"
+  label = "funds"
+  replacement = ""
+  delete = false
+
+  [[edgeDefs.type.options]]
+  color = "#f28e31"
+  label = "is related to"
+  replacement = ""
+  delete = false
+
+  [[edgeDefs.type.options]]
+  color = "#5f59c0"
+  label = "interacts with"
+  replacement = ""
+  delete = false
+
+  [[edgeDefs.type.options]]
+  color = "#eeff00"
+  label = "visits"
   replacement = ""
   delete = false
 
@@ -297,9 +269,9 @@ hidden = false
 
 [edgeDefs.comments]
 type = "string"
-displayLabel = "Comments"
-exportLabel = "Comments"
-help = 'Enter "<comment> -- <name> <date>"'
+displayLabel = "Tags"
+exportLabel = "TagsEdges"
+help = "Semi-colon delimited tags"
 includeInGraphTooltip = true
 hidden = false
 
@@ -337,3 +309,17 @@ exportLabel = "Revision"
 includeInGraphTooltip = true
 help = "Number of times this edge has been revised"
 hidden = true
+
+[edgeDefs.sourceLabel]
+displayLabel = "Source"
+exportLabel = "Source Label"
+help = "Source label"
+hidden = false
+type = "string"
+
+[edgeDefs.targetLabel]
+displayLabel = "Target"
+exportLabel = "Target Label"
+help = "Target label"
+hidden = false
+type = "string"
